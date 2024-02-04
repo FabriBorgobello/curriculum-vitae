@@ -10,11 +10,15 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Fabricio Borgobello - Curriculum Vitae</title>
   </head>
-  <body class="p-8 text-slate-800 bg-white max-w-[1200px] mx-auto">
-    <header class="border-b-[1px] border-b-slate-500 pb-4">
+  <body
+    class="p-8 text-slate-800 bg-white max-w-[1000px] mx-auto print:p-0 print:max-w-full"
+  >
+    <header
+      class="border-b-[1px] border-b-slate-500 pb-4 print:border-none print:pb-0"
+    >
       <div class="flex flex-col sm:flex-row sm:justify-between">
         <h1 class="text-2xl font-bold">Fabricio Borgobello</h1>
-        <p class="text-xl sm:text-2xl">Front-end developer</p>
+        <p class="text-xl">Front-end developer</p>
       </div>
       <div class="flex flex-col md:flex-row sm:justify-between mt-4">
         <ul class="flex flex-col sm:flex-row sm:space-x-4 lg:space-x-6">
@@ -81,7 +85,45 @@
             <span> Barcelona, Spain </span>
           </li>
         </ul>
-        <ul class="flex justify-evenly flex-row sm:space-x-6 mt-6 md:mt-auto">
+        <!-- SOCIAL MEDIA - PRINT MODE -->
+        <ul class="hidden print:block">
+          <li class="flex items-center">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              class="mr-1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.12 1.28003H2.88C1.9968 1.28003 1.28 1.99683 1.28 2.88003V13.12C1.28 14.0032 1.9968 14.72 2.88 14.72H13.12C14.0032 14.72 14.72 14.0032 14.72 13.12V2.88003C14.72 1.99683 14.0032 1.28003 13.12 1.28003ZM5.44 6.40003V12.48H3.52V6.40003H5.44ZM3.52 4.63043C3.52 4.18243 3.904 3.84003 4.48 3.84003C5.056 3.84003 5.4176 4.18243 5.44 4.63043C5.44 5.07843 5.0816 5.44003 4.48 5.44003C3.904 5.44003 3.52 5.07843 3.52 4.63043ZM12.48 12.48H10.56C10.56 12.48 10.56 9.51683 10.56 9.28003C10.56 8.64003 10.24 8.00003 9.44 7.98723H9.4144C8.64 7.98723 8.32 8.64643 8.32 9.28003C8.32 9.57123 8.32 12.48 8.32 12.48H6.4V6.40003H8.32V7.21923C8.32 7.21923 8.9376 6.40003 10.1792 6.40003C11.4496 6.40003 12.48 7.27363 12.48 9.04323V12.48Z"
+                class="fill-current"
+              />
+            </svg>
+            <span>https://www.linkedin.com/in/fabriborgobello/ </span>
+          </li>
+          <li class="flex items-center">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              class="mr-1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.00001 1.59998C4.46561 1.59998 1.60001 4.46558 1.60001 7.99998C1.60001 10.9989 3.66507 13.5082 6.44907 14.2026C6.41921 14.1162 6.40001 14.016 6.40001 13.8917V12.7978C6.14027 12.7978 5.70507 12.7978 5.59574 12.7978C5.15787 12.7978 4.76854 12.6096 4.57974 12.2597C4.37014 11.8709 4.33387 11.2762 3.81441 10.9125C3.66027 10.7914 3.77761 10.6533 3.95521 10.672C4.28321 10.7648 4.55521 10.9898 4.81121 11.3237C5.06614 11.6581 5.18614 11.7338 5.66241 11.7338C5.89334 11.7338 6.23894 11.7205 6.56427 11.6693C6.73921 11.225 7.04161 10.816 7.41121 10.6229C5.28001 10.4037 4.26294 9.34344 4.26294 7.90398C4.26294 7.28424 4.52694 6.68478 4.97547 6.17971C4.82827 5.67838 4.64321 4.65598 5.03201 4.26664C5.99094 4.26664 6.57067 4.88851 6.70987 5.05651C7.18774 4.89278 7.71254 4.79998 8.26401 4.79998C8.81654 4.79998 9.34347 4.89278 9.82241 5.05758C9.96001 4.89064 10.5403 4.26664 11.5013 4.26664C11.8917 4.65651 11.7045 5.68318 11.5557 6.18344C12.0016 6.68744 12.264 7.28531 12.264 7.90398C12.264 9.34237 11.2485 10.4021 9.12054 10.6224C9.70614 10.928 10.1333 11.7866 10.1333 12.4336V13.8917C10.1333 13.9472 10.1211 13.9872 10.1147 14.0346C12.6085 13.1605 14.4 10.7925 14.4 7.99998C14.4 4.46558 11.5344 1.59998 8.00001 1.59998Z"
+                class="fill-current"
+              />
+            </svg>
+            <span>https://github.com/FabriBorgobello/</span>
+          </li>
+        </ul>
+        <!-- SOCIAL MEDIA - SCREEN MODE -->
+        <ul
+          class="flex justify-evenly flex-row sm:space-x-6 mt-6 md:mt-auto print:hidden"
+        >
           <li>
             <a
               href="https://www.linkedin.com/in/fabriborgobello/"
@@ -106,7 +148,7 @@
           </li>
           <li>
             <a
-              href="https://github.com/FabriBorgobello"
+              href="https://github.com/FabriBorgobello/"
               target="_blank"
               rel="noopener noreferrer"
               class="text-blue-600 flex items-center p-2 sm:p-0"
@@ -138,7 +180,7 @@
           <h3>Pile Capital</h3>
           <p>Feb 2024 - Present</p>
         </div>
-        <div class="mt-2">
+        <div>
           <h4 class="italic">Front-end developer</h4>
           <ul class="ml-8 list-disc">
             <li>
@@ -153,7 +195,7 @@
           <h3>Southern Code</h3>
           <p>Nov 2021 - Sep 2023</p>
         </div>
-        <div class="mt-2">
+        <div>
           <h4 class="italic">Back-end developer</h4>
           <ul class="ml-8 list-disc">
             <li>
@@ -170,7 +212,7 @@
             </li>
           </ul>
         </div>
-        <div class="mt-2">
+        <div>
           <h4 class="italic">Front-end developer - Technical lead</h4>
           <ul class="ml-8 list-disc">
             <li>

@@ -6,44 +6,50 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Fabricio Borgobello - Curriculum Vitae</title>
   </head>
-  <body>
+  <body class="p-8">
     <header>
-      <h1>Fabricio Borgobello</h1>
-      <p>Front-end developer</p>
-      <ul>
-        <li>fborgobello@gmail.com</li>
-        <li>(+34) 601504552</li>
-        <li>Barcelona, Spain</li>
-      </ul>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/fabriborgobello/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/FabriBorgobello"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-        </li>
-      </ul>
+      <div class="flex flex-col sm:flex-row sm:justify-between">
+        <h1 class="text-2xl font-bold">Fabricio Borgobello</h1>
+        <p class="text-xl sm:text-2xl">Front-end developer</p>
+      </div>
+      <div class="flex flex-col md:flex-row sm:justify-between">
+        <ul class="flex flex-col sm:flex-row sm:space-x-6 mt-4">
+          <li>fborgobello@gmail.com</li>
+          <li>(+34) 601504552</li>
+          <li>Barcelona, Spain</li>
+        </ul>
+        <ul class="flex flex-col sm:flex-row sm:space-x-6 mt-4">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/fabriborgobello/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/FabriBorgobello"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
-    <section>
-      <h2>WORK EXPERIENCE</h2>
+    <section class="mt-8 space-y-4">
+      <h2 class="text-lg font-bold border-b-black border-b-2">
+        WORK EXPERIENCE
+      </h2>
       <article>
-        <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between font-bold">
           <h3>Southern Code</h3>
           <p>Nov 2021 - Sep 2023</p>
         </div>
-        <div>
-          <h4>Back-end developer</h4>
-          <ul>
+        <div class="mt-2">
+          <h4 class="italic">Back-end developer</h4>
+          <ul class="ml-8 list-disc">
             <li>
               Developed microservices using NodeJs, Express, NestJs, and others
               for e-commerce and printing platforms.
@@ -58,9 +64,9 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h4>Front-end developer - Technical lead</h4>
-          <ul>
+        <div class="mt-2">
+          <h4 class="italic">Front-end developer - Technical lead</h4>
+          <ul class="ml-8 list-disc">
             <li>
               Led the transition to microservices architecture for a PropTech
               platform using ReactJs/NextJs, Python/Django, and Azure DevOps.
@@ -81,13 +87,13 @@
         </div>
       </article>
       <article>
-        <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between font-bold">
           <h3>Goiar</h3>
           <p>Feb 2021 - Mar 2022</p>
         </div>
         <div>
-          <h4>Front-end developer - Mobile developer</h4>
-          <ul>
+          <h4 class="italic">Front-end developer - Mobile developer</h4>
+          <ul class="ml-8 list-disc">
             <li>
               Front-end and mobile development for a multi-platform application
               for personnel management.
@@ -100,13 +106,13 @@
         </div>
       </article>
       <article>
-        <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between font-bold">
           <h3>DesitSA</h3>
           <p>Jun 2020 - Mar 2021</p>
         </div>
         <div>
-          <h4>Front-end developer</h4>
-          <ul>
+          <h4 class="italic">Front-end developer</h4>
+          <ul class="ml-8 list-disc">
             <li>
               Specialized in developing front-end for a security and monitoring
               software suite using React.js, Redux and Jest.
@@ -120,16 +126,18 @@
         </div>
       </article>
     </section>
-    <section>
-      <h2>TEACHING AND MENTORSHIP EXPERIENCE</h2>
+    <section class="mt-8 space-y-4">
+      <h2 class="text-lg font-bold border-b-black border-b-2">
+        TEACHING AND MENTORSHIP EXPERIENCE
+      </h2>
       <article>
-        <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between font-bold">
           <h3>Next-U (short-term)</h3>
           <p>Sept 2023 - Oct 2023</p>
         </div>
         <div>
-          <h4>Front-end Instructor - Project Mentor</h4>
-          <ul>
+          <h4 class="italic">Front-end Instructor - Project Mentor</h4>
+          <ul class="ml-8 list-disc">
             <li>
               Teaching and mentoring students in class sessions for a two-month
               project, guiding them through the development and execution of
@@ -139,13 +147,13 @@
         </div>
       </article>
       <article>
-        <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between font-bold">
           <h3>CoderHouse (part-time)</h3>
           <p>Nov 2020 – Jun 2022</p>
         </div>
         <div>
-          <h4>React Js teacher</h4>
-          <ul>
+          <h4 class="italic">React Js teacher</h4>
+          <ul class="ml-8 list-disc">
             <li>
               Provided engaging instruction in React.js, from foundational to
               advanced topics, to a diverse group of learners. Facilitated
@@ -156,9 +164,11 @@
         </div>
       </article>
     </section>
-    <section>
-      <h3>ADDITIONAL SKILLS AND LANGUAGES</h3>
-      <ul>
+    <section class="mt-8 space-y-4">
+      <h2 class="text-lg font-bold border-b-black border-b-2">
+        ADDITIONAL SKILLS AND LANGUAGES
+      </h2>
+      <ul class="ml-8 list-disc">
         <li>
           <b>Skills:</b>
           JavaScript, TypeScript, HTML, CSS/SCSS, ReactJs, NextJs, React Native,

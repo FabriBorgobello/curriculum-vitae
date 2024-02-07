@@ -691,6 +691,10 @@ video {
   min-width: 0;
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;

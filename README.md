@@ -8,3 +8,11 @@ Feel free to explore and reach out if you have any questions or need further inf
 
 Kind regards,
 Fabricio
+
+## Development
+
+Run the following command to transpile Tailwind CSS:
+
+```bash
+npx tailwindcss -i ./input.css -o ./output.css --watch
+```
